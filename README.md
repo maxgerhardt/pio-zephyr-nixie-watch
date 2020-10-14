@@ -15,6 +15,7 @@ set (BOARD_ROOT "${CMAKE_CURRENT_SOURCE_DIR}")
 ```
 line in the `zephyr/CMakeLists.txt`
 
+See @valeros blog post at https://piolabs.com/blog/engineering/platformio-zephyr-custom-hardware.html.
 
 
 # Execution 
@@ -48,6 +49,7 @@ Kconfig header saved to 'C:/Users/Maxi/Desktop/nixie/.pio/build/nixie_watch/zeph
 -- Configuring done
 -- Generating done
 -- Build files have been written to: C:/Users/Maxi/Desktop/nixie/.pio/build/nixie_watch```
+```
 
 Should show that the correct board and DTS file is used.
 
