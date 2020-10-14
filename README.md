@@ -4,7 +4,7 @@ Adds a new board definition for Zephyr.
 
 # Project structure 
 
-This project is structured so that no modifications to any platform or framework packages must be done. 
+This project is structured so that no modifications to any platform or framework packages must be done. If there were previous modifications / additions to folders like `C:\Users\<user>\.platformio\packages\framework-zephyr\boards\arm` or `C:\Users\<user>\.platformio\platforms\nordicnrf52\boards` they should be undone. 
 
 The board JSON definition is located in `boards/`. 
 
