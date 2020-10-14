@@ -1,0 +1,52 @@
+{
+    "build": {
+      "arduino":{
+        "ldscript": "nrf52_xxaa.ld"
+      },
+      "core": "nRF5",
+      "cpu": "cortex-m4",
+      "extra_flags": "-DARDUINO_NRF52_DK",
+      "f_cpu": "64000000L",
+      "mcu": "nrf52832",
+      "variant": "nRF52DK",
+      "zephyr": {
+         "variant": "nixie_watch",
+         "cmake_extra_args": "-DOPENOCD_NRF5_SUBFAMILY=nrf52"
+      }
+    },
+    "connectivity": [
+      "bluetooth"
+    ],
+    "debug": {
+      "default_tools": [
+        "jlink"
+      ],
+      "jlink_device": "nRF52832_xxAA",
+      "onboard_tools": [
+        "cmsis-dap",
+        "jlink"
+      ],
+      "svd_path": "nrf52.svd"
+    },
+    "frameworks": [
+      "arduino",
+      "mbed",
+      "zephyr"
+    ],
+    "name": "Neonkev Nixie Watch",
+    "upload": {
+      "maximum_ram_size": 65536,
+      "maximum_size": 524288,
+      "protocol": "jlink",
+      "protocols": [
+        "jlink",
+        "nrfjprog",
+        "stlink",
+        "blackmagic",
+        "cmsis-dap",
+        "mbed"
+      ]
+    },
+    "url": "/",
+    "vendor": "Nordic"
+  }
