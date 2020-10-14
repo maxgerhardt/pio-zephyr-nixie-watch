@@ -15,6 +15,8 @@ set (BOARD_ROOT "${CMAKE_CURRENT_SOURCE_DIR}")
 ```
 line in the `zephyr/CMakeLists.txt`
 
+The `nixie_watch` board files are a copy of `nrf52dk_nrf52832` with all the board variables renamed.
+
 See @valeros blog post at https://piolabs.com/blog/engineering/platformio-zephyr-custom-hardware.html.
 
 
